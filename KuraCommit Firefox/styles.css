@@ -1,0 +1,56 @@
+/* Custom "Mark as Done" button */
+.kura-custom-commit-btn {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: none;
+  border-right: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.kura-custom-commit-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.kura-custom-commit-btn.kura-custom-undo {
+  background-color: rgba(88, 88, 88, 0.4);
+}
+
+.kura-custom-commit-btn.kura-custom-undo:hover {
+  background-color: rgba(88, 88, 88, 0.6);
+}
+
+/* Make sure the tile li items are positioned correctly if needed */
+.LessonTile-li {
+  position: relative;
+}
+
+/* Custom overlay mimicking the original one */
+.kura-custom-overlay {
+  pointer-events: none; /* Let clicks pass through */
+}
+
+/* The actual "Committed" badge at the bottom left */
+.kura-custom-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--dark-text);
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--success-green-20) !important;
+  padding: 2px 6px 3px;
+  border-radius: 5px;
+  height: fit-content;
+  box-sizing: border-box;
+}
