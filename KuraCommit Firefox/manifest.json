@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "KuraCommit",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Manually mark KuraCloud activities as done.",
   "permissions": ["storage"],
   "host_permissions": ["*://syd1.lt.app/*"],

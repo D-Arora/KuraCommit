@@ -18,6 +18,25 @@
   transition: background-color 0.2s;
 }
 
+.kura-custom-commit-btn.list-view-btn {
+  position: static;
+  margin-top: 0;
+  border: none;
+  width: fit-content;
+}
+
+.kura-custom-commit-btn.list-view-done-btn {
+  background-color: transparent !important;
+  color: inherit !important;
+  padding: 0;
+  font-weight: normal;
+  border: none;
+}
+.kura-custom-commit-btn.list-view-done-btn:hover {
+  background-color: transparent !important;
+  opacity: 0.8;
+}
+
 .kura-custom-commit-btn:hover {
   background-color: rgba(0, 0, 0, 0.9);
 }
@@ -31,7 +50,8 @@
 }
 
 /* Make sure the tile li items are positioned correctly if needed */
-.LessonTile-li {
+.LessonTile-li,
+.StudentListModuleLesson {
   position: relative;
 }
 
